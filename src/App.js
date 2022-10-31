@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import About from "./components/about/About";
 import Resumes from "./components/resumes/Resumes";
 import Projects from "./components/projects/Projects";
+import Footer from "./components/Footer"
 import {
   BrowserRouter as Router,
   Route,
@@ -13,7 +14,7 @@ import {
 function App() {
   return (
     <Router>
-    <div className="overflow-hidden">
+    <div className="overflow-x-hidden">
       <NavBar></NavBar>
       <Routes>
       <Route path="/" element={<Home1 />} />
@@ -22,6 +23,7 @@ function App() {
       <Route path="/resumes" element={<Resumes />} />
       <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
+      <Footer></Footer>
     </div>
     </Router>
   );

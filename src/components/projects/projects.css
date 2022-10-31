@@ -1,0 +1,5 @@
+.hello{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    
+}
