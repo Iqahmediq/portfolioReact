@@ -1,8 +1,14 @@
 import React from 'react'
 import logo from'../../Assets/loop.png'
-
+import {
+  AiFillGithub,
+  AiFillFacebook,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 const Home2 = () => {
   return (
+    <div>
     <div className='flex w-screen  h-screen  items-center relative z-0	justify-center'>
       <div className='w-7/12 flex flex-col items-center justify-center pl-40 text-lg '>
             <h1 style={{ fontSize: "2.6em" }}>
@@ -53,7 +59,52 @@ const Home2 = () => {
               />
             </center>
                  </div>
-        
+    </div>
+        <center className=''>
+
+        <h1 className='text-5xl'>FIND ME ON</h1>
+            <p>
+              Feel free to <span className="text-yellow-400">connect </span>with me
+            </p>
+            <ul className="flex justify-center ">
+              <li className="social-icons">
+                <a
+                  href="https://github.com/Iqahmediq"
+                  target="_blank"
+                  
+                >
+                  <AiFillGithub className="h-10 w-10 mr-8 text-yellow-500" />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTthgvDBgXjbpZVHkLzvQmthQKtJJggfrBRGfBBxJpznxjrvdBXmZbFTRNwLqwmBXcBvrP"
+                  target="_blank"
+                >
+                  <SiGmail className="h-10 w-10 mr-8 text-yellow-500" />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/belkhiria-ahmed-61b550238/"
+                  target="_blank"
+                >
+                  <FaLinkedinIn className="h-10 w-10 mr-8 text-yellow-500" />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.facebook.com/ahmed.belkhiria.9404/"
+                  target="_blank"
+                  >
+                  <AiFillFacebook  className="h-10 w-10 mr-8 text-yellow-500"/>
+                </a>
+              </li>
+            </ul>
+            <br></br>
+            <br></br>
+            <br></br>
+        </center>
     </div>
   )
 }

@@ -1,11 +1,15 @@
 import React from 'react'
 import { ImPointRight } from "react-icons/im";
+import Techstack from './TechStack';
+import './about.css'
+import ToolStack from './ToolStack';
 
 const About = () => {
   return (
-    <div className='flex w-screen  h-screen  items-center relative justify-center z-0 '>
-      <div> 
-        <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+    <>
+        <div className='flex w-screen  h-screen justify-center  items-center text-2xl gap-24 z-0'>
+    <div > 
+        <h1 className='text-3xl'>
           Know Who <strong className="text-yellow-400">I'M</strong>
         </h1>
         <p style={{ textAlign: "justify" }}>
@@ -17,21 +21,33 @@ const About = () => {
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
-            <li className="flex">
+            <li className="flex gap-4">
               <ImPointRight  /> Playing Games
             </li>
-            <li className="flex">
-              <ImPointRight /> ************
+            <li className="flex gap-4">
+              <ImPointRight /> Practice Sports
             </li>
-            <li className="flex">
-              <ImPointRight /> *******
+            <li className="flex gap-4">
+              <ImPointRight /> Reading Books
             </li>
           </ul>
-      </div>
-      <div>
+           </div>
+    <div className="container" >
+		<span className="react-logo">
+			<span className="nucleo"></span>
+		</span>
 
-      </div>
     </div>
+    </div>
+    <center className="h-screen w-screen">
+      <center className="text-6xl my-4"> professional <span className="text-yellow-400"> SkillSet</span></center>
+
+      <Techstack></Techstack>
+      <center className="text-6xl my-4"> Tools <span className="text-yellow-400"> I USE</span></center>
+      
+      <ToolStack></ToolStack>
+      </center>
+    </>
   )
 }
 

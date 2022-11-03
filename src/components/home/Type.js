@@ -1,8 +1,9 @@
 import React from 'react'
 import Typewriter from "typewriter-effect";
+import'./Type.css'
 const Type = () => {
   return (
-    <div>
+    <div className='style'>
       <Typewriter
       options={{
         strings: [
@@ -13,7 +14,7 @@ const Type = () => {
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
-        stop:50 ,
+
       }}
     />
     </div>
